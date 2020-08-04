@@ -1,0 +1,7 @@
+name: SpicyMeat
+version: ${project.version}
+main: dev.floffah.spicymeat.SpicyMeat
+api-version: 1.15
+authors: [Floffah]
+description: Adds meat with side effects.
+depend: [RemnantUtils, HeadDatabase]

@@ -1,4 +1,4 @@
-> Epic Minecraft server you should join :) -> [discord.gg/remnantmc](https://discord.gg/remnantmc)
+**Epic Minecraft server you should join :) -> [discord.gg/remnantmc](https://discord.gg/remnantmc)**
 
 # SpicyMeat
 1.16 Plugin that adds new weird food to the game.

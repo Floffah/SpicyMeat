@@ -13,3 +13,25 @@ Nothing in this plugin was meant to be offensive, it is just memes from the Mine
 
 ### Dependencies
  - [HeadDatabase](https://www.spigotmc.org/resources/head-database.14280/) (Optional, without it you will not get Popcorn and CarbombCake)
+
+## Food
+
+![](https://i.imgur.com/voALVNq.png)
+
+**Explosive Steak** | Explodes you when you eat it. Does not kill you and will not damage others around you.
+
+![](https://i.imgur.com/fgBuRlO.png)
+
+**Shit** | Kills you instantly when you eat it
+
+![](https://i.imgur.com/gGuhXUh.png)
+
+**Crack Cookie** | Gives you nausea, speed, and blindness for a few seconds
+
+![](https://i.imgur.com/1ilxJR9.png)
+
+**Popcorn** | Sodium poisoning.
+
+![](https://i.imgur.com/kQX90co.png)
+
+**Car Bomb Cake** | Same as explosive steak but hurts you a bit more

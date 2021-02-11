@@ -1,6 +1,7 @@
 package dev.floffah.spicymeat;
 
-import dev.floffah.remnantutils.util.Chat;
+import dev.dbassett.skullcreator.SkullCreator;
+import dev.floffah.util.chat.Colours;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
@@ -13,9 +14,9 @@ public class Recipes {
     public static void steak(SpicyMeat pl) {
         ItemStack steak = new ItemStack(Material.COOKED_BEEF, 1);
         ItemMeta ms = steak.getItemMeta();
-        ms.setDisplayName(Chat.clr("&cExplosive &eSteak"));
+        ms.setDisplayName(Colours.def("&cExplosive &eSteak"));
         ArrayList lore = new ArrayList<String>();
-        lore.add(Chat.clr("&cEat at your own risk!"));
+        lore.add(Colours.def("&cEat at your own risk!"));
         ms.setLore(lore);
         steak.setItemMeta(ms);
 
@@ -31,9 +32,9 @@ public class Recipes {
     public static void shit(SpicyMeat pl) {
         ItemStack beans = new ItemStack(Material.COCOA_BEANS, 1);
         ItemMeta ms = beans.getItemMeta();
-        ms.setDisplayName(Chat.clr("&cShit"));
+        ms.setDisplayName(Colours.def("&cShit"));
         ArrayList lore = new ArrayList<String>();
-        lore.add(Chat.clr("&eEat shit and die."));
+        lore.add(Colours.def("&eEat shit and die."));
         ms.setLore(lore);
         beans.setItemMeta(ms);
 
@@ -49,9 +50,9 @@ public class Recipes {
     public static void cookie(SpicyMeat pl) {
         ItemStack cookie = new ItemStack(Material.COOKIE, 1);
         ItemMeta cs = cookie.getItemMeta();
-        cs.setDisplayName(Chat.clr("&eCrack &6Cookie"));
+        cs.setDisplayName(Colours.def("&eCrack &6Cookie"));
         ArrayList lore = new ArrayList<String>();
-        lore.add(Chat.clr("&4DRUGS ARE BAD"));
+        lore.add(Colours.def("&4DRUGS ARE BAD"));
         cs.setLore(lore);
         cookie.setItemMeta(cs);
 
@@ -64,12 +65,17 @@ public class Recipes {
         pl.getServer().addRecipe(ecookie);
     }
 
+    public static ItemStack getPopcornHead() {
+        String b64 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzM1NDdkZDU1OTE2MmVkMzU0MTFhZWM5ZjY4MzI4MTVmYjA5ZTRkOGFkNDE2YmIyMWNiNGMxYzk0N2ViYjVhIn19fQ==";
+        return SkullCreator.itemFromBase64(b64);
+    }
+
     public static void popcorn(SpicyMeat pl) {
-        ItemStack popcorn = pl.hdapi.getItemHead("24953");
+        ItemStack popcorn = getPopcornHead();
         SkullMeta ps = (SkullMeta) popcorn.getItemMeta();
-        ps.setDisplayName(Chat.clr("&eExtra Salty &6Popcorn"));
+        ps.setDisplayName(Colours.def("&eExtra Salty &6Popcorn"));
         ArrayList lore = new ArrayList<String>();
-        lore.add(Chat.clr("&cExtra salty more like sodium poisoning."));
+        lore.add(Colours.def("&cExtra salty more like sodium poisoning."));
         ps.setLore(lore);
         popcorn.setItemMeta(ps);
 
@@ -82,12 +88,17 @@ public class Recipes {
         pl.getServer().addRecipe(ecorn);
     }
 
+    public static ItemStack getCakebombHead() {
+        String b64 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNkNWUxMzg4NzYzZjcxODJhN2FhZTQxNDhhMzk1ZDVjMzM0ZjBhNjQ4ZGQ2MDU0MWE3MjEzYWM4OWRmNGEifX19";
+        return SkullCreator.itemFromBase64(b64);
+    }
+
     public static void cakebomb(SpicyMeat pl) {
-        ItemStack cake = pl.hdapi.getItemHead("3286");
+        ItemStack cake = getCakebombHead();
         ItemMeta cs = cake.getItemMeta();
-        cs.setDisplayName(Chat.clr("&6Car Bomb &eCake"));
+        cs.setDisplayName(Colours.def("&6Car Bomb &eCake"));
         ArrayList lore = new ArrayList<String>();
-        lore.add(Chat.clr("&bBuild battle car bomb"));
+        lore.add(Colours.def("&bBuild battle car bomb"));
         cs.setLore(lore);
         cake.setItemMeta(cs);
 

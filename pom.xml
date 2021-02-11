@@ -6,7 +6,7 @@
 
     <groupId>dev.floffah</groupId>
     <artifactId>SpicyMeat</artifactId>
-    <version>1.4.1</version>
+    <version>1.5.0</version>
     <packaging>jar</packaging>
 
     <name>SpicyMeat</name>
@@ -62,24 +62,29 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>skullcreator-repo</id>
+            <url>https://dl.bintray.com/deanveloper/SkullCreator</url>
+        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
             <groupId>com.destroystokyo.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.15.2-R0.1-SNAPSHOT</version>
+            <version>1.16.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>dev.floffah</groupId>
-            <artifactId>RemnantUtils</artifactId>
-            <version>1.2.2</version>
+            <artifactId>util</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
-            <groupId>com.github.shynixn.headdatabase</groupId>
-            <artifactId>hdb-api</artifactId>
-            <version>1.0</version>
+            <groupId>dev.dbassett</groupId>
+            <artifactId>skullcreator</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

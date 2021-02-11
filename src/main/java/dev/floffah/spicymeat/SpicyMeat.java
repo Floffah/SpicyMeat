@@ -19,24 +19,19 @@ public final class SpicyMeat extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        if (getServer().getPluginManager().getPlugin("RemnantUtils") == null) {
-            System.out.println("Could not find RemnantUtils v1.1.0");
-            getServer().getPluginManager().disablePlugin(this);
-        } else {
-            meatkey = new NamespacedKey(this, "explodermeat");
-            shatkey = new NamespacedKey(this, "eatshit");
-            cookiekey = new NamespacedKey(this, "crackcookie");
-            popcornkey = new NamespacedKey(this, "popcorn");
-            cakekey = new NamespacedKey(this, "carbombcake");
+        meatkey = new NamespacedKey(this, "explodermeat");
+        shatkey = new NamespacedKey(this, "eatshit");
+        cookiekey = new NamespacedKey(this, "crackcookie");
+        popcornkey = new NamespacedKey(this, "popcorn");
+        cakekey = new NamespacedKey(this, "carbombcake");
 
-            Recipes.steak(this);
-            Recipes.shit(this);
-            Recipes.cookie(this);
-            Recipes.popcorn(this);
-            Recipes.cakebomb(this);
+        Recipes.steak(this);
+        Recipes.shit(this);
+        Recipes.cookie(this);
+        Recipes.popcorn(this);
+        Recipes.cakebomb(this);
 
-            getServer().getPluginManager().registerEvents(new Eat(this), this);
-        }
+        getServer().getPluginManager().registerEvents(new Eat(this), this);
     }
 
     public boolean wasShat(UUID id) {
